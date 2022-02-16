@@ -34,14 +34,19 @@ export default class HomeScreen extends Component {
               style={styles.iconImage}></Image>
           </TouchableOpacity>
           
-          <TouchableOpacity style={styles.routeCard}>
+          <TouchableOpacity
+            style={styles.routeCard}
+            onPress={() => this.props.navigation.navigate('Meteors')}>
             <Text style={styles.routeText}>Meteors</Text>
             <Text style={styles.knowMore}>{'Know More --->'}</Text>
             <Image
               source={require('../assets/meteor_icon.png')}
               style={styles.iconImage}></Image>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.routeCard}>
+
+          <TouchableOpacity 
+            style={styles.routeCard}
+            onPress={() => this.props.navigation.navigate('Updates')}>
             <Text style={styles.routeText}>Updates</Text>
             <Text style={styles.knowMore}>{'Know More --->'}</Text>
             <Image
