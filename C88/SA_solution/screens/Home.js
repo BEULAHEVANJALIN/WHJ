@@ -19,12 +19,15 @@ export default class HomeScreen extends Component {
                     </View>
                     <TouchableOpacity style={styles.routeCard}>
                         <Text style={styles.routeText}>ISS Location</Text>
+                        <Text style={styles.knowmore}>{"Know More --->"}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.routeCard}>
                         <Text style={styles.routeText}>Meteors</Text>
+                        <Text style={styles.knowmore}>{"Know More --->"}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.routeCard}>
                         <Text style={styles.routeText}>Updates</Text>
+                        <Text style={styles.knowmore}>{"Know More --->"}</Text>
                     </TouchableOpacity>
             </View>
         );
@@ -62,5 +65,10 @@ const styles = StyleSheet.create({
         color: "black",
         marginTop: 75,
         paddingLeft: 30
+    },
+    knowMore: {
+        paddingLeft: 30,
+        color: "red",
+        fontSize: 15
     }
 });
